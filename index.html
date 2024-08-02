@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./images/favicoin.png" type="image/x-icon">
+
+    <title>Mi billetera</title>
+</head>
+<body>
+    <header>
+        <img src="./images/favicoin.png" alt="logo" class="logo">
+        <h1>Mi billetera</h1>
+        <button>
+            <img src="./images/trash.png" alt="borrar" id="borrar-todo">
+        </button>
+    </header>
+    <main>
+        <div class="container-balance">
+            <h2>Balance</h2>
+            <h2 id="balance">$0,00</h2>
+        </div>
+        <div class="container-card">
+
+            <div class="ingresos card">
+                <img src="./images/ingresos.png" alt="ingresos">
+                <div>
+                    <p>Ingresos</p>
+                    <p id="contador-ingresos">$0,00</p>
+                </div>
+                <a href="./pages/ingresos.html"><img src="./images/next.png" alt="next" class="next"></a>
+            </div>
+
+            <div class="gastos card">
+                <img src="./images/gastos.png" alt="ingresos">
+                <div>
+                    <p>Gastos</p>
+                    <p id="contador-gastos">$0,00</p>
+                </div>
+                <a href="./pages/gastos.html"><img src="./images/next.png" alt="next" class="next"></a>
+            </div>
+
+            <div class="ahorros card">
+                <img src="./images/ahorros.png" alt="ahorros">
+                <div>
+                    <p>Ahorros</p>
+                    <p id="contador-ahorros">$0,00</p>
+                </div>
+                <a href="./pages/ahorros.html"><img src="./images/next.png" alt="next" class="next"></a>
+            </div>
+
+        </div>
+    </main>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
